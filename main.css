@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+.results {
+  color: #222;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.primes, .composites {
+  max-width: 80%;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  color: #222;
+  text-align: center;
+}
+
+header {
+  background-color: #222;
+  height: 50px;
+  padding: 20px;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  color: #333;
+  opacity: 0.3;
+}
+
+a {
+  font-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  outline: none;
+  width: 40%;
+  height: 20px;
+  margin-top: 30px;
+}
+
+button {
+  display: block;
+  width: 80px;
+  height: 30px;
+  margin-top: 12px;
+  border: none;
+  transition: all .1s ease;
+}
+
+button:hover {
+  color: #eee;
+  background-color: #888;
+}
