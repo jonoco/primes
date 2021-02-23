@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-  <meta charset="UTF-8">
-  <script type="text/javascript" src="script.js"></script>
-  <link rel="stylesheet" href="main.css">
+  <meta charset='UTF-8'>
+  <script type='text/javascript' src='script.js'></script>
+  <link rel='stylesheet' href='main.css'>
 
   <title>Prime checker</title>
 </head>
@@ -11,18 +11,24 @@
 <header>
   <h1>Are These Prime?</h1>
 
+  <div class='container'>
+    <p class='description'>Enter an ascending list of ordered numbers to check whether the list contains any composites, or is missing any primes with the range.</p>
+  </div>
+
+
   <form>
-    <input name="area" id='input'></input>
+    <input name='area' id='input' placeholder='2 3 4 7 99 ...'></input>
     <button id='submit'>Check</button>
   </form>
 
-  <div className='results'>
+  <div class='container'>
     <p id='primes'></p>
     <p id='composites'></p>
+    <p id='results'></p>
   </div>
 
   <footer>
-    by <a href="https://github.com/jonoco">jonoco</a>
+    by <a href='https://github.com/jonoco'>jonoco</a>
   </footer>
 </body>
 </html>

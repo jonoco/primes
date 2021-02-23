@@ -40,7 +40,7 @@ const checkInput = (e) => {
   // compose results
   let primesResults = ''
   if (missingPrimes.length != 0) {
-    primesResults = 'Found missing primes:\n'
+    primesResults = '<span>Found missing primes:</span> '
     for (let p of missingPrimes) {
       primesResults += `${p} `
     }
@@ -50,7 +50,7 @@ const checkInput = (e) => {
 
   let compositesResults = ''
   if (composites.length != 0) {
-    compositesResults = 'Found composites:\n'
+    compositesResults = '<span>Found composites:</span> '
     for (let c of composites) {
       compositesResults += `${c} `
     }
@@ -58,9 +58,12 @@ const checkInput = (e) => {
     compositesResults = "No composites found"
   }
 
+  let inputNumbers = '<span>Input checked:</span> ' + parsedNumbers.join(" ")
+
   document.getElementById('input').value = ''
   document.getElementById('primes').innerHTML = primesResults
   document.getElementById('composites').innerHTML = compositesResults
+  document.getElementById('results').innerHTML = inputNumbers
 }
 
 window.addEventListener('DOMContentLoaded', (event) => {

@@ -4,27 +4,12 @@ body {
   font-family: sans-serif;
 }
 
-
-.results {
-  color: #222;
-  margin-top: 20px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.primes, .composites {
-  max-width: 80%;
-}
-
 h1 {
   text-align: center;
 }
 
 p {
-  color: #222;
+  color: #444;
   text-align: center;
 }
 
@@ -75,4 +60,26 @@ button {
 button:hover {
   color: #eee;
   background-color: #888;
+}
+
+span {
+  font-weight: bold;
+}
+
+.description {
+  max-width: 400px;
+}
+
+.container {
+  color: #222;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#primes, #composites {
+  max-width: 80%;
 }
